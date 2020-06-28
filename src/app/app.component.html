@@ -1,0 +1,13 @@
+<hello name="{{ name }}"></hello>
+<table width="100%">
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Status</th>
+  </tr>
+  <tr *ngFor="let datas of todos">
+    <td>{{datas.id}}</td>
+    <td>{{datas.name}}</td>
+    <td>{{datas.completed}}</td>
+  </tr>
+</table>
