@@ -2,6 +2,7 @@
 export class ModelMapper<T> {
   _propertyMapping: any;
   _target: any;
+  
   constructor(type: { new(): T; }) {
     this._target = new type();
     this._propertyMapping = this._target.constructor._propertyMap;
